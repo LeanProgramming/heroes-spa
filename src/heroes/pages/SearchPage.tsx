@@ -64,7 +64,7 @@ export const SearchPage = () => {
           <hr />
 
           {
-            (q!.length <= 1 || q === '')
+            (q!.length < 1 || q === '')
               ? <div className="alert alert-primary animate__animated animate__headShake"> Search a hero </div> 
               : (heroes.length === 0) 
                 && <div className="alert alert-danger animate__animated animate__headShake">No hero found with <b>{q}</b></div>
