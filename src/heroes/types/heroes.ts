@@ -6,3 +6,8 @@ export interface IHero {
   first_appearance: string;
   characters: string;
 }
+
+export interface ICharactersByHero {
+  alter_ego: string;
+  characters: string;
+}
